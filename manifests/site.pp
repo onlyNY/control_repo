@@ -1,6 +1,7 @@
 node puppetagent-cent {
   file { '/home/oy/blue.sh':
-    ensure   => file
+    ensure  => file
     content => 'blue black red',
+    owner   => 'oy',
    }
 }
