@@ -5,5 +5,6 @@ node 'puppetagent-cent.lab' {
 
 node 'puppetagent-mac.local' {
   notify { 'hello MAC':
+  include role::edit_defualt
   }
 }
