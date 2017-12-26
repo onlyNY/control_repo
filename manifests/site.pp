@@ -1,9 +1,9 @@
 node 'puppetagent-cent.lab' {
-  notify { 'hello CENT',
+  notify { 'hello CENT':
   }
 }
 
 node 'puppetagent-mac.local' {
-  notify { 'hello MAC',
+  notify { 'hello MAC':
   }
 }
