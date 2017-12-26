@@ -1,7 +1,9 @@
 node 'puppetagent-cent.lab' {
-  include file_chk
+  notify { 'hello CENT',
+  }
 }
 
 node 'puppetagent-mac.local' {
-  include file_chk
+  notify { 'hello MAC',
+  }
 }
