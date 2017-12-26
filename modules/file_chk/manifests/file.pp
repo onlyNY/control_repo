@@ -6,3 +6,11 @@ node 'puppetagent-mac.local' {
    #owner   => 'macadmin',
    }
 }
+
+node 'puppetagent-cent.lab' {
+  file {'/home/oy/blue.sh':
+    ensure  => file
+    #content => 'blue black red',
+    #owner   => 'oy',
+   }
+}
