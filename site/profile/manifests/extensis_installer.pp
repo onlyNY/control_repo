@@ -20,7 +20,7 @@ class profile::extensis_installer (
 } 
 
  elsif $::osfamily == 'windows' {
-       file { "${Wpref}\Type Server Core Client\": 
+       file { "${Wprefdir}\Type Server Core Client\": 
        owner  => "$user",
        mode   => 644,
        ensure => present,
