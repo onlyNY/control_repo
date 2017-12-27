@@ -1,11 +1,11 @@
 class profile::extensis_installer (
       $installdir = 'puppet:///modules/extensis_installer/files/'
-      $Mpref      = '/Library/Preferences/com.extensis.TypeServerCoreClient.conf'
-      $Wpref      = 'C:\Program Files\Extensis\Type Server Core Client\
+      $Mprefdir   = '/Library/Preferences/'
+      $Wprefdir   = 'C:\Program Files\Extensis'
 ){
 
   if $::osfamily == 'darwin' {
-       file { "$Mpref": 
+       file { "{$Mpref}/com.extensis.TypeServerCoreClient.conf": 
        owner  => "$user",
        mode   => 644,
        ensure => present,
@@ -19,7 +19,7 @@ class profile::extensis_installer (
        source   => "${installdir}/type.core_613M.pkg",
 
 } elsif $::osfamily == 'windows' {
-       file { "$Wpref": 
+       file { "${Wpref}\Type Server Core Client\": 
        owner  => "$user",
        mode   => 644,
        ensure => present,
