@@ -1,7 +1,7 @@
 class profile::extensis_installer (
-      $installdir = 'puppet:///modules/extensis_installer/files/'
-      $Mprefdir   = "/Library/Preferences/"
-      $Wprefdir   = 'C:\Program Files\Extensis'
+      $installdir = 'puppet:///modules/extensis_installer/files/',
+      $Mprefdir   = "/Library/Preferences/",
+      $Wprefdir   = 'C:\Program Files\Extensis',
 ){
 
   if $::osfamily == 'darwin' {
