@@ -7,7 +7,7 @@ node 'puppetagent-cent.lab' {
 }
 
 node 'puppetagent-mac.local' {
-  include role::incoply_clean,
+  include incoply_clean,
   }
 }
 
