@@ -7,7 +7,7 @@ node 'puppetagent-cent.lab' {
 }
 
 node 'puppetagent-mac.local' {
-  include incoply_clean,
+  include extensis_installer
   }
 }
 
