@@ -23,7 +23,7 @@ class profile::extensis_installer (
        owner  => "$user",
        mode   => 644,
        ensure => present,
-       source => "${installdir}/com.extensis.TypeServerCoreClient.conf",      
+       source => "${Wpref}/com.extensis.TypeServerCoreClient.conf",      
       }
  }
  
