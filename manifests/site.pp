@@ -7,8 +7,8 @@ node 'puppetagent-cent.lab' {
 
 
 node 'puppetagent-mac.local' {
-  include extensis_installer,
-  }
+  include class::extensis_installer
+}
 
  # this is grabs any machine carrying imac in the hostname
  #  >> node /^imac/ {} <<
