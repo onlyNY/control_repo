@@ -20,11 +20,11 @@ class profile::extensis_installer (
 } 
 
  elsif $::osfamily == 'windows' {
-       file { "${Wprefdir}\Type Server Core Client\": 
+       file { "${Wprefdir}\Type Server Core Client\com.extensis.TypeServerCoreClient.conf": 
        owner  => "$user",
        mode   => 644,
        ensure => present,
-       source => "${Wpref}/com.extensis.TypeServerCoreClient.conf",      
+       source => "${Wpref}\com.extensis.TypeServerCoreClient.conf",      
       }
  }
  
