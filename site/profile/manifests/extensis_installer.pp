@@ -10,13 +10,14 @@ class profile::extensis_installer (
        mode   => 644,
        ensure => present,
        source => "${installdir}/com.extensis.TypeServerCoreClient.conf",
-    }
-  }
-} 
-       package { 'Type Server Core Client':
+              package { 'Type Server Core Client':
        provider => dpkg,
        ensure   => installed,
        source   => "${installdir}/type.core_613M.pkg",}
+
+    }
+  }
+} 
 
  elsif $::osfamily == 'windows' {
        file { "${Wpref}\Type Server Core Client\": 
