@@ -26,13 +26,13 @@ class profile::extensis_installer (
        ensure => present,
        source => "${Wpref}\com.extensis.TypeServerCoreClient.conf",      
       }
- }
- 
+      
       package { 'Core Client':
        provider => dpkg,
        ensure   => installed,
        source   => "${installdir}/type.core_613W.exe",
             
+    }
 } else {
        notify 'This is not a supported distro.'
  
