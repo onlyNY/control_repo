@@ -5,7 +5,7 @@ class profile::extensis_installer (
 ){
 
   if $::osfamily == 'darwin' {
-       file { $Mpref: 
+       file { "$Mpref": 
        owner  => "$user",
        mode   => 644,
        ensure => present,
@@ -19,7 +19,7 @@ class profile::extensis_installer (
        source   => "${installdir}/type.core_613M.pkg",
 
 } elsif $::osfamily == 'windows' {
-       file { $Wpref: 
+       file { "$Wpref": 
        owner  => "$user",
        mode   => 644,
        ensure => present,
