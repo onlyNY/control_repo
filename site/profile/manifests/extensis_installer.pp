@@ -1,6 +1,6 @@
 class profile::extensis_installer (
       $installdir = 'puppet:///modules/extensis_installer/files/'
-      $Mprefdir   = '/Library/Preferences/'
+      $Mprefdir   = "/Library/Preferences/"
       $Wprefdir   = 'C:\Program Files\Extensis'
 ){
 
