@@ -4,7 +4,7 @@ node 'puppetagent-cent.lab' {
   ensure  => file,
   content => "Working on ${fqdn}\n",
   }
-
+}
 
 node 'puppetagent-mac.local' {
   include norton_installer
