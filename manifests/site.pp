@@ -7,7 +7,7 @@ node 'puppetagent-cent.lab' {
 }
 
 node 'puppetagent-mac.local' {
-  include incopy_clean
+  include norton_installer
 }
  
  
