@@ -7,7 +7,7 @@ node 'puppetagent-cent.lab' {
 
 
 node 'puppetagent-mac.local' {
-  include nortons_installer
+  include norton_installer
 }
 
  # this is grabs any machine carrying imac in the hostname
