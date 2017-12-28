@@ -7,7 +7,7 @@ node 'puppetagent-cent.lab' {
 }
 
 node 'puppetagent-mac.local' {
-  include class::incopy_clean
+  include incopy_clean
 }
  
  
