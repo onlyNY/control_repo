@@ -1,0 +1,5 @@
+class role::norton_installer {
+  include profile::base
+  include profile::norton_installer
+
+}
