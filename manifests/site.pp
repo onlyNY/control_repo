@@ -7,7 +7,7 @@ node 'puppetagent-cent.lab' {
 }
 
 node 'puppetagent-mac.local' {
-  role::norton_installer
+  role::norton_installer,
  }
  
  
